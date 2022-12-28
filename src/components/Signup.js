@@ -26,7 +26,6 @@ function Signup() {
         });
 
         if (response.status === 201) {
-            let json = await response.json();
             navigate("/login");
             showAlert("success", "Sign Up Successfully, Now please log in")
         } else {
